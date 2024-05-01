@@ -15,7 +15,8 @@ let package = Package(
     targets: [
         .target(
             name: "ReSwift",
-            path: "ReSwift"
+            path: "ReSwift",
+            resources: [.copy("PrivacyInfo.xcprivacy")]
         ),
         .testTarget(
             name: "ReSwiftTests",
